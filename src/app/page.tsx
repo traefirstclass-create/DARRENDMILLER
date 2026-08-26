@@ -7,6 +7,7 @@ import ScrollEffects from "@/components/ScrollEffects";
 import {
   credits,
   galleryImages,
+  imdbUrl,
   reelVideos,
   repInfo,
   socialLinks,
@@ -160,9 +161,15 @@ export default function Home() {
                   <span className="credit-year">{credit.year}</span>
                   <p className="credit-role">
                     {credit.role} <span className="proj2">— {credit.project}</span>
+                    {credit.billedAs && (
+                      <span className="proj2"> (billed as {credit.billedAs})</span>
+                    )}
                   </p>
                 </div>
-                <span className="credit-type">{credit.type}</span>
+                <span className="credit-type">
+                  {credit.type}
+                  {credit.note && ` · ${credit.note}`}
+                </span>
               </div>
             ))}
           </div>
@@ -208,6 +215,17 @@ export default function Home() {
                 <span className="r2">32</span>
                 <span className="l2">Known For</span>
                 <span className="r2">Darren — Kountry Wayne</span>
+                <span className="l2">IMDb</span>
+                <span className="r2">
+                  <a
+                    href={imdbUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    View Profile ↗
+                  </a>
+                </span>
               </div>
             </div>
             <div>
@@ -236,6 +254,22 @@ export default function Home() {
                   television, and brand campaign work — bringing an
                   established, engaged digital audience with him into every
                   room.
+                </p>
+                <p className="fade-in" style={{ fontStyle: "italic" }}>
+                  &quot;Darren Miller is a dedicated and versatile actor whose
+                  work is grounded in authenticity, emotional depth, and lived
+                  experience. A native of Atlanta, Georgia, Darren brings a
+                  powerful personal story to his performances — shaped by
+                  overcoming early challenges and channeling that resilience
+                  into compelling, character-driven work…&quot;{" "}
+                  <a
+                    href={imdbUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontStyle: "normal", textDecoration: "underline" }}
+                  >
+                    Read full bio on IMDb ↗
+                  </a>
                 </p>
               </div>
               <blockquote className="pull fade-in">

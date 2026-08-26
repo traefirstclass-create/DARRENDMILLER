@@ -29,9 +29,11 @@ When deploying to Vercel, add the same variables under **Project Settings → En
 
 - `repInfo` — agent/agency name, booking email, phone
 - `unionStatus`
-- `credits` — past roles beyond the current Kountry Wayne credit
-- `reelVideos` — set `url` to a YouTube or Vimeo link and the reel card automatically becomes clickable and embeds it
 - `socialLinks` — currently point to `#`
+
+`credits` is sourced from [his IMDb profile](https://www.imdb.com/name/nm18058249/) and the `imdbUrl` constant links to it from the About section — update both together as new credits are added there.
+
+`reelVideos` — set `url` to a YouTube or Vimeo link and the reel card automatically becomes clickable and embeds it.
 
 Photos live in `public/images/`; swap the files (keep the same names, or update the references in `src/lib/content.ts` and `src/app/page.tsx`) to replace them.
 

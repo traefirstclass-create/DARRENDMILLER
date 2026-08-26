@@ -8,13 +8,21 @@ export const repInfo = {
 
 export const unionStatus = "Non-Union — REPLACE";
 
+// IMDb profile: https://www.imdb.com/name/nm18058249/
+export const imdbUrl = "https://www.imdb.com/name/nm18058249/";
+
 export type Credit = {
   year: string;
   role: string;
   project: string;
   type: string;
+  /** Stage name he was credited under for this role, if different from his billed name elsewhere. */
+  billedAs?: string;
+  /** Short qualifier shown next to the credit type, e.g. "1 Episode" or "Pre-Production". */
+  note?: string;
 };
 
+// Sourced from IMDb (nm18058249) — keep in sync as new credits are added there.
 export const credits: Credit[] = [
   {
     year: "PRESENT",
@@ -23,22 +31,39 @@ export const credits: Credit[] = [
     type: "Web Series — Recurring",
   },
   {
-    year: "REPLACE",
-    role: "ROLE NAME",
-    project: "PROJECT TITLE",
-    type: "Film / TV / Digital",
+    year: "UPCOMING",
+    role: "Deputy Ron",
+    project: "No Fear",
+    type: "Film",
+    note: "Pre-Production",
   },
   {
-    year: "REPLACE",
-    role: "ROLE NAME",
-    project: "PROJECT TITLE",
-    type: "Film / TV / Digital",
+    year: "2026",
+    role: "Billionaire James",
+    project: "Diary of a Family Affair",
+    type: "TV Series",
+    note: "1 Episode",
   },
   {
-    year: "REPLACE",
-    role: "ROLE NAME",
-    project: "PROJECT TITLE",
-    type: "Commercial / Brand",
+    year: "2026",
+    role: "Malachi Jordan",
+    project: "My Girlfriend's Husband",
+    type: "Film",
+    billedAs: "DarrenDequan",
+  },
+  {
+    year: "2026",
+    role: "Police Officer",
+    project: "Fatal Attraction",
+    type: "TV Series",
+    note: "1 Episode",
+  },
+  {
+    year: "2025",
+    role: "Art Dealer",
+    project: "Art of Murder",
+    type: "Film",
+    billedAs: "Darren Dequan",
   },
 ];
 
