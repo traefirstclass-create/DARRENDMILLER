@@ -75,20 +75,28 @@ export type ReelVideo = {
   url: string | null;
 };
 
+// Videos are hosted in a shared Google Drive folder — drop the file's
+// share link into `url` (e.g. https://drive.google.com/file/d/FILE_ID/view)
+// once it's uploaded, and the embed will pick it up automatically.
 export const reelVideos: ReelVideo[] = [
   {
-    title: "Comedy Reel",
-    description: "Primary demo reel — comedic range across sketch formats.",
+    title: "Reel 1",
+    description: "Video coming soon.",
+    url: "https://drive.google.com/file/d/1tsNgP_dp_QAkJKVayNbJBdFSEE0VE194/view?usp=drive_link",
+  },
+  {
+    title: "Reel 2",
+    description: "Video coming soon.",
+    url: "https://drive.google.com/file/d/11q9dhp-QvbIqyXXuAUPgi1hbTCqnZM-G/view?usp=drive_link",
+  },
+  {
+    title: "Reel 3",
+    description: "Video coming soon.",
     url: null,
   },
   {
-    title: "Self-Tape — Dramatic",
-    description: "Dramatic scene self-tape, single take.",
-    url: null,
-  },
-  {
-    title: "Darren — Scene Highlight",
-    description: "Featured Darren scene from Kountry Wayne's catalog.",
+    title: "Reel 4",
+    description: "Video coming soon.",
     url: null,
   },
 ];

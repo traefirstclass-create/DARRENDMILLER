@@ -179,11 +179,8 @@ export default function Home() {
         <section id="reel" className="reel-section">
           <div className="wrap">
             <p className="kicker fade-in" style={{ color: "#FF3347", marginBottom: 16 }}>
-              Screening Room
+              Demo Reel
             </p>
-            <h2 className="section-title fade-in" style={{ color: "#fff" }}>
-              On camera, on demand.
-            </h2>
             <div className="reel-grid">
               {reelVideos.map((video, i) => (
                 <ReelCard video={video} key={i} />

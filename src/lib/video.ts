@@ -26,6 +26,12 @@ export function getEmbedUrl(url: string): string | null {
       return id ? `https://player.vimeo.com/video/${id}?autoplay=1` : null;
     }
 
+    if (u.hostname.includes("drive.google.com")) {
+      const match = u.pathname.match(/\/file\/d\/([^/]+)/);
+      const id = match ? match[1] : u.searchParams.get("id");
+      return id ? `https://drive.google.com/file/d/${id}/preview` : null;
+    }
+
     return null;
   } catch {
     return null;

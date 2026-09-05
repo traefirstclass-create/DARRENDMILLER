@@ -612,10 +612,15 @@ section {
 }
 .reel-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 @media (max-width: 900px) {
+  .reel-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
   .reel-grid {
     grid-template-columns: 1fr;
   }
@@ -626,7 +631,7 @@ section {
   overflow: hidden;
 }
 .reel-thumb {
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16;
   background: var(--platinum-deep);
   position: relative;
   display: flex;
