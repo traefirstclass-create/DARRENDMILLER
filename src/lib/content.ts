@@ -81,17 +81,17 @@ export type ReelVideo = {
 export const reelVideos: ReelVideo[] = [
   {
     title: "Reel 1",
-    description: "Video coming soon.",
+    description: "KW Skits",
     url: "https://drive.google.com/file/d/1tsNgP_dp_QAkJKVayNbJBdFSEE0VE194/view?usp=drive_link",
   },
   {
     title: "Reel 2",
-    description: "Video coming soon.",
+    description: "KW Skits.",
     url: "https://drive.google.com/file/d/11q9dhp-QvbIqyXXuAUPgi1hbTCqnZM-G/view?usp=drive_link",
   },
   {
     title: "Reel 3",
-    description: "Video coming soon.",
+    description: "KW SKits",
     url: "https://drive.google.com/file/d/11_3PCyzLVFgH_tvEQ26rAjKOdKML1jEW/view?usp=drive_link",
   },
   {
