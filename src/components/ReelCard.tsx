@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import type { ReelVideo } from "@/lib/content";
-import { getEmbedUrl } from "@/lib/video";
+import { getEmbedUrl, getThumbnailUrl } from "@/lib/video";
 
 export default function ReelCard({ video }: { video: ReelVideo }) {
   const [playing, setPlaying] = useState(false);
   const embedUrl = video.url ? getEmbedUrl(video.url) : null;
+  const thumbnailUrl = video.url ? getThumbnailUrl(video.url) : null;
   const playable = Boolean(embedUrl);
 
   return (
@@ -28,6 +29,10 @@ export default function ReelCard({ video }: { video: ReelVideo }) {
           aria-label={playable ? `Play ${video.title}` : video.title}
           disabled={!playable}
         >
+          {thumbnailUrl && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={thumbnailUrl} alt="" className="reel-thumb-img" />
+          )}
           <div className="knob play-knob">
             <div className="tri" />
           </div>
