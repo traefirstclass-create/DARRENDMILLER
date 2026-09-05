@@ -92,7 +92,7 @@ export const reelVideos: ReelVideo[] = [
   {
     title: "Reel 3",
     description: "Video coming soon.",
-    url: null,
+    url: "https://drive.google.com/file/d/11_3PCyzLVFgH_tvEQ26rAjKOdKML1jEW/view?usp=drive_link",
   },
   {
     title: "Reel 4",
