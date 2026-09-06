@@ -75,7 +75,6 @@ export default function Home() {
                 <br />
                 Dequan
                 <br />
-                Miller
               </h1>
               <p className="lede">
                 Actor and entertainer out of Atlanta, GA. Recurring principal on
@@ -121,7 +120,7 @@ export default function Home() {
             <div className="photo-tile">
               <Image
                 src="/images/spotlight-darren.jpg"
-                alt="Darren Dequan Miller as Darren in Kountry Wayne's digital sketch series"
+                alt="Darren Dequan as Darren in Kountry Wayne's digital sketch series"
                 fill
                 sizes="(max-width: 900px) 100vw, 40vw"
               />
@@ -199,7 +198,7 @@ export default function Home() {
               <div className="photo-tile">
                 <Image
                   src="/images/profile-about.jpg"
-                  alt="Darren Dequan Miller portrait"
+                  alt="Darren Dequan portrait"
                   fill
                   sizes="(max-width: 900px) 100vw, 40vw"
                 />
@@ -232,7 +231,7 @@ export default function Home() {
               </h2>
               <div className="about-body">
                 <p className="fade-in">
-                  Darren Dequan Miller is an actor and entertainer out of
+                  Darren Dequan is an actor and entertainer out of
                   Atlanta, Georgia, best recognized for his recurring role as
                   Darren in Kountry Wayne&apos;s digital sketch universe — one
                   of the most-watched original comedy channels on Facebook and
@@ -253,7 +252,7 @@ export default function Home() {
                   room.
                 </p>
                 <p className="fade-in" style={{ fontStyle: "italic" }}>
-                  &quot;Darren Miller is a dedicated and versatile actor whose
+                  &quot;Darren is a dedicated and versatile actor whose
                   work is grounded in authenticity, emotional depth, and lived
                   experience. A native of Atlanta, Georgia, Darren brings a
                   powerful personal story to his performances — shaped by
@@ -360,7 +359,7 @@ export default function Home() {
               <div className="photo-tile fade-in" key={src}>
                 <Image
                   src={src}
-                  alt={`Darren Dequan Miller gallery photo ${i + 1}`}
+                  alt={`Darren Dequan gallery photo ${i + 1}`}
                   fill
                   sizes="(max-width: 700px) 50vw, 33vw"
                 />

@@ -49,7 +49,7 @@ export default function CompCard() {
             <div className="photo-tile" style={{ aspectRatio: "4/5" }}>
               <Image
                 src="/images/headshot-card.jpg"
-                alt="Darren Dequan Miller headshot"
+                alt="Darren Dequan headshot"
                 fill
                 sizes="320px"
                 priority
@@ -70,7 +70,7 @@ export default function CompCard() {
                 <span className="txt">Available</span>
               </span>
             </div>
-            <h2>Darren Dequan Miller</h2>
+            <h2>Darren Dequan </h2>
             <p className="sub">Actor / Entertainer · Atlanta, GA</p>
             <div className="stat-grid">
               <div>

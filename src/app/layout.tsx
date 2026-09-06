@@ -21,7 +21,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Darren Dequan Miller — Actor / Entertainer",
+  title: "Darren Dequan — Actor / Entertainer",
   description:
     "Actor and entertainer out of Atlanta, GA. Recurring principal on Kountry Wayne's digital sketch series.",
 };
